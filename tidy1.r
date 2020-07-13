@@ -10,6 +10,7 @@ library(ggpubr)
 tuesdata <- tidytuesdayR::tt_load(2020, week = 28)
 coffee_ratings <- tuesdata$coffee_ratings 
 
+## just keep columns I need ## 
 positions<-c(1,2,4)
 d2<-coffee_ratings[,positions]
 colnames(d2)<-c('points','species','country')
