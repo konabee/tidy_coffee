@@ -13,7 +13,7 @@ coffee_ratings <- tuesdata$coffee_ratings
 ## just keep columns I need ## 
 positions<-c(1,2,4)
 d2<-coffee_ratings[,positions]
-colnames(d2)<-c('points','species','country')
+colnames(d2)<-c('points','country')
 
 ## clump USA observations together; simplify Tanzania ##
 d2$country[d2$country %in% c('United States','United States (Hawaii)','United States (Puerto Rico)')]<-'USA (Mostly Hawaii)'
