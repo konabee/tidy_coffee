@@ -28,7 +28,7 @@ d2<-d2[d2$country %in% a$Var1,]
 mypal<-c('goldenrod3','rosybrown3','burlywood4','darkgreen')
 
 ## import background image ##
-img<-readPNG('C:/Users/Chia/Desktop/coffeepic3.png')
+img<-readPNG('coffeepic3.png')
 
 
 d2 %>% 
